@@ -71,15 +71,11 @@ body {
 
 .heading-primary--side {
     position: absolute;
-    /* font-family: 'Tangerine', cursive; */
-    /* font-family: 'Italianno', cursive; */
-    font-family: 'Parisienne', cursive;
-
+    font-family: 'Italianno', cursive;
     color: red;
-    top: 40px;
-    right: -40px;
-    transform: rotate(-45deg);
-    mix-blend-mode:color-dodgeor;
+    top: -20px;
+    right: 40px;
+ 
     z-index: 22;
 }
 
@@ -196,24 +192,59 @@ body {
     }
 }
 
+.about__me--wrapper {
+    margin: 100px 10%;
+
+}
+
+.about__me--wrapper h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1;
+}
 .about__me {
     color: gray;
     display: flex;
     justify-content: space-between;
+    position: relative;
     max-width: 1440px;
-    margin: 100px auto;
 } 
 
+.about__me h3 {
+    margin-bottom: 10px;
+}
+
 .about__me .about__me--info{
-    width: 50%;
+    width: 60%;
     padding-right: 20px;
 }
 .about__me .about__me--img {
-    width: 50%;
+    width: 40%;
+    height: 100%;
     text-align: center;
+    align-self: center;
+}
+
+.about__me .about__me--img .overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: -1;
+    color: gray;
+    width: 38%;
+    height: 100%;
+    word-spacing: 11px;
+    line-height: 2.1;
+    letter-spacing: 2px;
+    text-align: right;
+    opacity: .2;
+    /* max-height: 300px; */
+    overflow: hidden;
 }
 
 .about__me .about__me--img img{
     max-height: 300px ;
-   
+    border-radius: 50%;
+    margin: auto 0;
 }
