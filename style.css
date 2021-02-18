@@ -257,7 +257,7 @@ main {
 
 /***** Section Facts *****/
 .facts {
-    background: url('img/montenegro-2.jpg') no-repeat center/cover;
+    background: url('img/montenegro.png') no-repeat center/cover;
     height: 70vh;
     object-fit: top;
     padding: 0 50px;
