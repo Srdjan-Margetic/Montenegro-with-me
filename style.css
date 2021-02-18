@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.75;
 }
 
 /* promeni boju */
@@ -11,7 +12,6 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: grey;
-    /* padding: 30px; */
 }
 
 .header {
@@ -31,17 +31,6 @@ body {
     object-fit: cover;
     opacity: 1;
 }
-/* 
-.header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: #03a9f4; */
-    /* background: rgba(25, 181, 254, 0.6);
-    mix-blend-mode: overlay;
-} */ 
 
 .header__logo-box {
     position: absolute;
@@ -192,6 +181,10 @@ body {
     }
 }
 
+main {
+    overflow: hidden;
+}
+
 .about__me--wrapper {
     margin: 100px 10%;
 
@@ -247,4 +240,34 @@ body {
     max-height: 300px ;
     border-radius: 50%;
     margin: auto 0;
+}
+
+.facts {
+    background: url('img/montenegro-2.jpg') no-repeat center/cover;
+    height: 70vh;
+    object-fit: top;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color:#333333;
+    opacity: .9;
+}
+
+.facts div {
+    background-color: white;
+    opacity: 0.8;
+    padding: 35px 25px;
+}
+
+.facts div h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.facts div p {
+    font-size: 15px;
 }
