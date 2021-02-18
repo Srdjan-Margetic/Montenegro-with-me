@@ -4,6 +4,18 @@
     box-sizing: border-box;
     line-height: 1.75;
 }
+:root {
+    --blue__light: #00d4ff;
+    --blue__medium: #3b91e0;
+    --blue__dark: #318be0;
+    --backgroudn__gray: #f7f7f7;
+    --white:#fff;
+    --black: #000;
+    --text__gray: #777;
+    --yellow: #FFFF00;
+    --red: #ff0000;
+
+}
 
 /* promeni boju */
 body {
@@ -11,7 +23,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: grey;
+    color: var(--text__gray);
 }
 
 .header {
@@ -36,7 +48,6 @@ body {
     position: absolute;
     top: 40px;
     left: 40px;
-
 }
 
 .header__logo {
@@ -44,8 +55,7 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
-    color: yellow;
+    color: var(--yellow);
     text-transform: uppercase;
     margin-bottom: 60px;
 }
@@ -61,7 +71,7 @@ body {
 .heading-primary--side {
     position: absolute;
     font-family: 'Italianno', cursive;
-    color: red;
+    color: var(--red);
     top: -20px;
     right: 40px;
  
@@ -137,9 +147,8 @@ body {
 }
 
 .btn--white {
-    background-color: #fff;
-    background-color: yellow;
-    color: gray;
+    background-color: var(--yellow);
+    color: var(--text__gray);
     border-radius: 100px;
 }
 
@@ -157,7 +166,7 @@ body {
 }
 
 .btn--white::after {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .btn:hover::after {
@@ -183,6 +192,8 @@ body {
 
 main {
     overflow: hidden;
+    background-color: var(--backgroudn__gray);
+    z-index: -1;
 }
 
 .about__me--wrapper {
@@ -197,7 +208,7 @@ main {
     line-height: 1;
 }
 .about__me {
-    color: gray;
+    color: var(--text__gray);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -212,6 +223,7 @@ main {
     width: 60%;
     padding-right: 20px;
 }
+
 .about__me .about__me--img {
     width: 40%;
     height: 100%;
@@ -223,8 +235,8 @@ main {
     position: absolute;
     top: 0;
     left: 75%;
-    z-index: -1;
-    color: gray;
+    z-index: 0;
+    color: var(--text__gray);
     width: 38%;
     height: 100%;
     word-spacing: 11px;
@@ -232,7 +244,6 @@ main {
     letter-spacing: 2px;
     text-align: right;
     opacity: .2;
-    /* max-height: 300px; */
     overflow: hidden;
 }
 
@@ -240,8 +251,11 @@ main {
     max-height: 300px ;
     border-radius: 50%;
     margin: auto 0;
+    position: relative;
+    z-index: 1
 }
 
+/***** Section Facts *****/
 .facts {
     background: url('img/montenegro-2.jpg') no-repeat center/cover;
     height: 70vh;
@@ -251,12 +265,12 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    color:#333333;
+    color: var(--text__gray);
     opacity: .9;
 }
 
 .facts div {
-    background-color: white;
+    background-color: var(--white);
     opacity: 0.8;
     padding: 35px 25px;
 }
@@ -270,4 +284,54 @@ main {
 
 .facts div p {
     font-size: 15px;
+}
+
+/***** Section Tours *****/
+
+.tours__cards--wrapper .tours__cards {
+    max-width: 1440px;
+    margin: 100px 10%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tours__cards--wrapper .tours__cards .card {
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    height: 500px;
+    width: 200px;
+}
+
+.tours__cards--wrapper .tours__cards .card .card__side {
+    height: 500px;
+    transition: all .6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 15px 40px  rgba(0,0,0, 0.2);
+}
+
+.tours__cards--wrapper .tours__cards .card .card__side--front {
+    background-color: var(--white);
+}
+
+.tours__cards--wrapper .tours__cards .card .card__side--back {
+    background: linear-gradient(to right bottom, var(--blue__light), var(--blue__medium), var(--blue__dark));
+    transform: rotateY(180deg);
+   
+}
+
+
+
+.tours__cards--wrapper .tours__cards .card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+.tours__cards--wrapper .tours__cards .card:hover .card__side--back {
+    transform: rotateY(0deg);
 }
