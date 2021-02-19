@@ -4,6 +4,7 @@
     box-sizing: border-box;
     line-height: 1.75;
 }
+
 :root {
     --blue__light: #00d4ff;
     --blue__medium: #3b91e0;
@@ -14,7 +15,6 @@
     --text__gray: #777;
     --yellow: #FFFF00;
     --red: #ff0000;
-
 }
 
 /* promeni boju */
@@ -34,6 +34,21 @@ body {
     position: relative;
 }
 
+.header .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* .header .navigation .toggle{
+    right: 0;
+    margin-left: auto;
+} */
+
 .header .header__video {
     position: absolute;
     left: 0;
@@ -41,11 +56,11 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 1;
+    z-index: -1;
 }
 
 .header__logo-box {
-    position: absolute;
+    /* position: absolute; */
     top: 40px;
     left: 40px;
 }
@@ -53,6 +68,34 @@ body {
 .header__logo {
     height: 35px;
 }
+
+.toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    background-color: var(--yellow);
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle.close .toggle__line-1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.toggle.close .toggle__line-2 {
+    opacity: 0;
+}
+.toggle.close .toggle__line-3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+/***** Header heading text *****/
 
 .heading-primary {
     color: var(--yellow);
@@ -125,6 +168,8 @@ body {
         transform: translateX(0);
     }
 }
+
+/***** Header button *****/
 
 .btn:link,
 .btn:visited {
@@ -209,6 +254,13 @@ main {
     font-size: 36px;
     line-height: 1;
 }
+
+.about__me--wrapper h2 .about__me--subheader{
+    display: block;
+   font-size: 24px;
+}
+
+
 .about__me {
     color: var(--text__gray);
     display: flex;
@@ -274,12 +326,14 @@ main {
     background-color: var(--white);
     opacity: 0.8;
     padding: 35px 25px;
+    width: 25%;
+    height: 65%;
 }
 
 .facts div h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -352,7 +406,7 @@ main {
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--2 {
-    background-image: url('img/tours-img/coastline.jpg');
+    background-image: url('img/tours-img/lake.jpg');
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--3 {
@@ -362,35 +416,6 @@ main {
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--4 {
     background-image: url('img/tours-img/mountains.jpg');
 }
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--5 {
-    background-image: url('img/tours-img/lake.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--6 {
-    background-image: url('img/tours-img/lake.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--7 {
-    background-image: url('img/tours-img/transfers.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--8 {
-    background-image: url('img/tours-img/ostrog.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--9 {
-    background-image: url('img/tours-img/romans.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--10 {
-    background-image: url('img/tours-img/castel-nuovo.jpg');
-}
-
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--11 {
-    background-image: url('img/tours-img/fjord.jpg');
-}
-
   
 /***** Footer *****/
 
@@ -399,6 +424,7 @@ main {
     height: 40vh;
     width: 100%;
     position: relative;
+    z-index: -1;
 }
 
 .footer .overlay {
@@ -407,4 +433,13 @@ main {
     width: 100%;
     background-color: var(--black);
     opacity: .8;
+    z-index: 0;
 } 
+
+.footer p {
+    position: relative;
+    color: white;
+    width: 400px;
+    height: 100%;
+    z-index: 1;
+}
