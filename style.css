@@ -94,9 +94,7 @@ body {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
-
 /***** Header heading text *****/
-
 .heading-primary {
     color: var(--yellow);
     text-transform: uppercase;
@@ -169,7 +167,6 @@ body {
 }
 
 /***** Header button *****/
-
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -241,7 +238,6 @@ main {
 }
 
 /***** Section About me *****/
-
 .about__me--wrapper {
     max-width: 1440px;
     min-height: 50vh;
@@ -266,7 +262,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0 5%;
+    margin: 0 10%;
 } 
 
 .about__me h3 {
@@ -316,13 +312,14 @@ main {
 /***** Section Facts *****/
 .facts {
     background: url('img/montenegro.png') no-repeat center/cover;
-    height: 70vh;
+    height: 80vh;
     object-fit: top;
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5%;
     color: var(--text__gray);
     opacity: .9;
 }
@@ -331,8 +328,9 @@ main {
     background-color: var(--white);
     opacity: 0.8;
     padding: 45px 25px;
-    width: 25%;
+    width: 27%;
     height: 50%;
+    border-radius: 5px;
 }
 
 .facts div h3 {
@@ -347,7 +345,6 @@ main {
 }
 
 /***** Section Tours *****/
-
 .tours__cards--wrapper {
     max-width: 1440px;
     margin: 100px auto;
@@ -450,7 +447,7 @@ main {
 
 .footer p {
     position: relative;
-    color: white;
+    color: var(--white);
     width: 400px;
     height: 100%;
     z-index: 1;
@@ -473,10 +470,12 @@ main {
 
 @media (max-width: 1400px) {
 
+/*** Section About me ***/
     .about__me p {
         font-size: 16px;
     }
 
+/*** Section Facts ***/
     .facts {
         height: 80vh;
     }
@@ -488,40 +487,30 @@ main {
 
 @media (max-width: 1200px) {
 
-    /*** Section Facts ***/
-    .facts {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
+/*** Section Facts ***/
     .facts div {
-        padding: 35px 20px;
-        height: 35%;
-        width: 45%;
+        width: 30%;
     }
 
-    .facts div p {
+    /* .facts div p {
         font-size: 15px;
-    }
+    } */
 
-    /*** Section Tours ***/
-
+/*** Section Tours ***/
     .tours__cards--wrapper .tours__cards {
-        justify-content: space-evenly;
-        gap: 2%;
-        row-gap: 30px;
-       
+        justify-content: space-between;
+        gap: 0;
     }
     
     .tours__cards--wrapper .tours__cards .card {
         height: 500px;
-        width: 40%;
+        width: 22%;
     }
 }
 
 @media (max-width: 1024px) {
 
+/*** Section Landing page ***/
     .heading-primary--main {
         font-size: 56px;
         letter-spacing: 35px;
@@ -540,23 +529,34 @@ main {
     .btn:visited {
         padding: 10px 30px;
     }
+/*** Section Facts ***/
+    .facts {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
 
-    /*** Section Tours ***/
+    .facts div {
+        width: 65%;
+        height: auto;
+    }
 
+/*** Section Tours ***/
     .tours__cards--wrapper .tours__cards {
-        justify-content: space-evenly;
-        gap: 2%;
-        row-gap: 30px;
+        justify-content: center;
+        gap: 45px;
+        row-gap: 45px;
     }
     
     .tours__cards--wrapper .tours__cards .card {
         height: 500px;
-        width: 45%;
+        width: 40%;
     }
 }
 
 @media (max-width: 860px) {
 
+/*** Section Landing page ***/
     .heading-primary--main {
         font-size: 54px;
         letter-spacing: 28px;
@@ -564,6 +564,8 @@ main {
     
     .heading-primary--side {
         font-size: 28px;
+        right: 30px;
+        top: -15px
     }
     
     .heading-primary--sub {
@@ -575,11 +577,169 @@ main {
     .btn:visited {
         font-size: 15px;
     }
-    /*** Section Facts ***/
-      .facts div p {
+}
+
+@media (max-width: 768px) {
+
+/*** Section Landing page ***/
+    .heading-primary--main {
+        font-size: 50px;
+        letter-spacing: 24px;
+    }
+    
+    .heading-primary--side {
+        font-size: 26px;
+        right: 25px;
+        top: -15px
+    }
+    
+    .heading-primary--sub {
+        font-size: 16px;
+        letter-spacing: 10px;
+    }
+
+    .btn:link,
+    .btn:visited {
         font-size: 14px;
+    }
+/*** Section About me ***/
+    .about__me p, 
+    .overlay-1 {
+        font-size: 15px;
+    }
+
+    .about__me .about__me--img img {
+        max-height: 275px;
+    }
+
+    /*** Section Facts ***/
+    .facts div {
+        width: 75%;
+        height: auto;
+    }
+
+    .facts div p {
+        font-size: 15px;
     }
 }
 
+@media (max-width: 680px) {
 
+/*** Section Landing page ***/
+    .heading-primary--main {
+        font-size: 46px;
+        letter-spacing: 18px;
+    }
+    
+    .heading-primary--side {
+        font-size: 22px;
+        right: 20px;
+        top: -10px
+    }
+    
+    .heading-primary--sub {
+        font-size: 15px;
+        letter-spacing: 8px;
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 14px;
+    }
+
+/*** Section About me ***/
+    .about__me--wrapper {
+        margin: 50px auto;
+    }
+    .about__me {
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .about__me .about__me--info {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .about__me .about__me--img {
+        width: 100%;
+        position: relative;
+        text-align: left;
+    }
+
+    .about__me .about__me--img .overlay-1{
+       left: 15%;
+       width: 100%;
+    }
+
+/*** Section Facts ***/
+    .facts div {
+        padding: 20px 20px;
+        height: 23%;
+        width: 100%;
+    }
+
+    .facts div h3 {
+        margin-bottom: 10px;
+    }
+
+    /*** Section Tours ***/
+    .tours__cards--wrapper {
+        margin: 50px auto;
+    }
+
+    .tours__cards--wrapper .tours__cards .card {
+        height: 500px;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+/*** Section Landing page ***/
+    .heading-primary--main {
+        font-size: 42px;
+        letter-spacing: 14px;
+    }
+
+    .heading-primary--side {
+        font-size: 22px;
+        right: 15px;
+        top: -10px
+    }
+
+    .heading-primary--sub {
+        font-size: 14px;
+        letter-spacing: 7px;
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 14px;
+    }
+
+    .about__me p, .overlay-1 {
+        font-size: 14px;
+    }
+
+
+    .about__me .about__me--img img {
+        max-width: 250px;
+    }
+
+    .about__me  .about__me--img .overlay-1 {
+        left: 20%;
+        line-height: 1.9;
+    }
+
+/*** Section Tours ***/
+    .tours__cards--wrapper .tours__cards .card {
+        height: 500px;
+        width: 70%;
+    }
+
+}
+/* @media (max-width: 1400px) {} */
 /* @media (max-width: 1400px) {} */
