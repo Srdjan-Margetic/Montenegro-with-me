@@ -316,10 +316,9 @@ main {
     object-fit: top;
     padding: 0 50px;
     display: flex;
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 40px;
     color: var(--text__gray);
     opacity: .9;
 }
@@ -329,7 +328,8 @@ main {
     opacity: 0.8;
     padding: 45px 25px;
     width: 27%;
-    height: 50%;
+    /* height: 50%; */
+    height: 40%;
     border-radius: 5px;
 }
 
@@ -460,13 +460,13 @@ main {
     }
 }
 
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
     .facts div {
         padding: 35px 25px;
         height: 55%;
     }
    
-}
+} */
 
 @media (max-width: 1400px) {
 
@@ -491,10 +491,6 @@ main {
     .facts div {
         width: 30%;
     }
-
-    /* .facts div p {
-        font-size: 15px;
-    } */
 
 /*** Section Tours ***/
     .tours__cards--wrapper .tours__cards {
