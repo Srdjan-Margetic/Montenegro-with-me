@@ -13,6 +13,7 @@
     --white:#fff;
     --black: #000;
     --text__gray: #777;
+    --underline__gray: #eee;
     --yellow: #FFFF00;
     --red: #ff0000;
 
@@ -476,6 +477,43 @@ main.move-left {
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--4 {
     background-image: url('img/tours-img/mountains.jpg');
+}
+
+.card__details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card__side .card__heading {
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(0,0,0, 0.3);
+    position: absolute;
+    top: 159px;
+    right: 0;
+    padding: 10px;
+}
+
+.card__side .card__heading h4 {
+    z-index: 2;
+    position: relative;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card__details ul{
+    margin: 0 auto;
+    width: 80%;
+    list-style: none;
+}
+
+.card__details ul li{
+    padding: 10px;
+    
+}
+
+.card__details ul li:not(:last-child){
+    border-bottom: 1px solid var(--underline__gray);
 }
   
 /***** Footer *****/
