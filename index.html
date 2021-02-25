@@ -14,13 +14,13 @@
 <body>
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Facts</a></li>
-            <li><a href="#">Tours</a></li>
+            <li><a href="#section__home">Home</a></li>
+            <li><a href="#section__about-me">About us</a></li>
+            <li><a href="#section__facts">Facts</a></li>
+            <li><a href="#section__tours">Tours</a></li>
         </ul>
     </div>
-    <header class="header">
+    <header class="header" id="section__home">
         <nav class="navigation">
             <div class="header__logo-box">
                 <img src="img/logo.png" alt="Montenegro flag" class="header__logo">
@@ -30,26 +30,20 @@
                 <div class="toggle__line-2"></div>
                 <div class="toggle__line-3"></div>
             </div>
-       
         </nav>
         <video class="header__video"" src="video/video.mp4" autoplay muted loop></video>
-      
-
-        <div class="header__text-box">
+        <div class="header__text-box" >
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Montenegro</span>
                 <span class="heading-primary--side">with me</span>
                 <span class="heading-primary--sub">your tailor-made experience</span>
             </h1>
-            <a href="#section-tours" class="btn btn--yellow btn--animated">Learn more</a>
+            <a href="#section__tours" class="btn btn--yellow btn--animated">Learn more</a>
         </div>
     </header>
 
-    
-
     <main>
-        
-        <section class="about__me--wrapper">
+        <section class="about__me--wrapper" id="section__about-me">
             <h2>
                 Jovan Kaludjerovic
                 <span class="about__me--subheader">Your Private Guide</span>
@@ -72,7 +66,7 @@
            </div>
         </section>
 
-        <section class="facts__wrapper">
+        <section class="facts__wrapper" id="section__facts">
             <div class="facts">
                 <div class="why_to_book">
                     <span class="facts-logo"><img src="img/logo.png" alt="logo"></span>
@@ -107,7 +101,7 @@
             </div>
         </section>
 
-        <section class="tours__cards--wrapper">
+        <section class="tours__cards--wrapper" id="section__tours">
 
             <h2>My Private Ventures</h2>
             <div class="tours__cards">
@@ -202,6 +196,22 @@
             </div>
         </section>
     </main>
+    
+    <div class="popup">
+        <div class="popup__content">
+           <div class="popup-left">
+               <img src="img/tours-img/north.jpg" alt="Tour photo">
+               <img src="img/tours-img/baroq.jpg" alt="Tour photo">
+           </div>
+           <div class="popup-right">
+               <h2>Naslov</h2>
+               <h3>Podnaslov</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a facilisis risus, sed volutpat ex. Vestibulum mi erat, iaculis pellentesque turpis non, sollicitudin pellentesque erat. Aliquam molestie rutrum mauris. Curabitur maximus, tellus ut rhoncus varius, libero justo rutrum velit, sed maximus purus risus quis purus. Vestibulum ac est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet diam sodales, ullamcorper turpis quis, scelerisque dolor. In suscipit et dolor a consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lectus in sapien posuere, id cursus dui consectetur. Maecenas venenatis leo ante, sit amet faucibus ex posuere sed.
+               </p>
+               <a href="#" class="btn btn--white btn--animated">Book now</a>
+           </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="overlay"></div>
