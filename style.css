@@ -106,7 +106,7 @@ body {
 .header
 
 .header__logo {
-    height: 35px;
+    height: 50px;
 }
 
 .toggle {
@@ -245,7 +245,7 @@ body {
 
 .btn--blue {
     background: linear-gradient(to right bottom, var(--blue__light), var(--blue__medium), var(--blue__dark));
-    color: var(--yellow);
+    color: var(--white);
     border-radius: 100px;
 }
 
@@ -399,6 +399,8 @@ main.move-left {
     width: 27%;
     height: 40%;
     border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(0,0,0, 0.2);
+
 }
 
 .facts .facts-logo  {
@@ -934,6 +936,10 @@ main.move-left {
         font-size: 16px;
         letter-spacing: 10px;
     }
+
+    .header__logo {
+        height: 35px;
+    }    
 
     .btn:link,
     .btn:visited {
