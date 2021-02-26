@@ -377,7 +377,8 @@ main.move-left {
 /***** Section Facts *****/
 .facts__wrapper {
     background: url('img/montenegro.png') no-repeat center/cover;
-    height: 80vh;
+    height: auto;
+    padding: 5% 0;
 }
 
 .facts {
@@ -453,7 +454,7 @@ main.move-left {
     -moz-perspective: 1500px;
     position: relative;
     height: 500px;
-    width: 23%;
+    width: 30%;
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side {
@@ -759,12 +760,11 @@ main.move-left {
 /*** Section Tours ***/
     .tours__cards--wrapper .tours__cards {
         justify-content: space-between;
-        gap: 0;
+        /* gap: 0; */
     }
     
     .tours__cards--wrapper .tours__cards .card {
         height: 500px;
-        width: 22%;
     }
 
     /*** Section Popup ***/
@@ -816,10 +816,6 @@ main.move-left {
     }
 /*** Section Facts ***/
 
-    .facts__wrapper {
-        height: 100vh;
-    }
-
     .facts {
         flex-wrap: wrap;
         align-content: center;
@@ -839,7 +835,7 @@ main.move-left {
     }
     
     .tours__cards--wrapper .tours__cards .card {
-        width: 40%;
+        width: 45%;
     }
 
 /*** Section Popup ***/
@@ -1109,9 +1105,9 @@ main.move-left {
         padding: 10px 5%;
     }
 
-    .facts div:nth-of-type(2) {
+    /* .facts div:nth-of-type(2) {
         display: none;
-    }
+    } */
 
     .facts div {
         padding: 20px 20px;
@@ -1252,7 +1248,7 @@ main.move-left {
 }
 
 @media (max-width: 360px) {
-    
+
 /*** Section Landing page ***/
     .heading-primary--main {
         font-size: 30px;
