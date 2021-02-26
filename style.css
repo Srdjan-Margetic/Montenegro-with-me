@@ -671,6 +671,7 @@ main.move-left {
 .popup .popup__content .popup-right .note {
     margin-top: 15px;
     text-align: center;
+    line-height: 1.2;
 }
 
 .popup .popup__content .popup-right .popup-right--button {
@@ -773,12 +774,22 @@ main.move-left {
         line-height: 1.5;
     }
 
+    .popup .popup__content .popup-right h2 {
+        font-size: 30px;
+    }
+
     .popup .popup__content .popup-right .popup__text p {
         line-height: 1.5;
+        font-size: 14px;
     }
 
     .popup .popup__content .popup-right .popup-right--button {
         margin-top: 20px;
+    }
+
+    .popup .popup__content .popup-right .popup-right--button a {
+        padding: 10px 30px;
+        font-size: 14px;
     }
 }
 
@@ -1047,8 +1058,9 @@ main.move-left {
     .popup .popup__content .popup-right .popup__close:link,
     .popup .popup__content .popup-right .popup__close:visited {
         color: var(--white);
-        top: 25px;
-        right: 25px;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
     }
 
     .popup .popup__content .popup-right h2 {
@@ -1063,10 +1075,6 @@ main.move-left {
 
     .popup .popup__content .popup-right .popup-right--button {
         margin-top: 20px;
-    }
-
-    .popup .popup__content .popup-right .note  {
-        line-height: 1.2;
     }
 }
 
@@ -1136,6 +1144,14 @@ main.move-left {
         display: none;
     }
 
+    .popup .popup__content .popup-right h2 {
+        margin: 10px 0;
+    }
+
+    .popup .popup__content .popup-right .note {
+        margin-top: 10px;
+    }
+
     .popup .popup__content .popup-right .popup__close:link,
     .popup .popup__content .popup-right .popup__close:visited {
         color: var(--white);
@@ -1169,6 +1185,20 @@ main.move-left {
 /*** Section Tours ***/
     .tours__cards--wrapper .tours__cards .card {
         width: 90%;
+    }
+
+    /*** Section Popup ***/
+
+    .popup .popup__content .popup-right .popup__close:link,
+    .popup .popup__content .popup-right .popup__close:visited {
+        color: var(--white);
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+    }
+
+    .popup .popup__content .popup-right h2 {
+        font-size: 26px;
     }
 }
 
@@ -1206,8 +1236,14 @@ main.move-left {
         width: 100%;
     }
 
+/*** Section Popup ***/
+
     .popup .popup__content .popup-right h2 {
         font-size: 22px;
+    }
+
+    .popup .popup__content .popup-right .popup__text p {
+        font-size: 13px;
     }
 
     .popup .popup__content .popup-right .note small {
@@ -1216,6 +1252,16 @@ main.move-left {
 
     .popup .popup__content .popup-right .popup__text {
         font-size: 14px;
+    }
+
+    /*** Section Popup ***/
+
+    .popup .popup__content .popup-right .popup-right--button {
+        margin: 15px 0;
+    }
+
+    .popup .popup__content .popup-right .popup-right--button a {
+        font-size: 13px;
     }
 }
 
@@ -1233,6 +1279,12 @@ main.move-left {
     .heading-primary--sub {
         font-size: 12px;
         letter-spacing: 3px;
+    }
+
+    /*** Section Popup ***/
+
+    .popup .popup__content .popup-right h2 {
+        font-size: 18px;
     }
 }
 
