@@ -528,6 +528,14 @@ main.move-left {
     background-image: url('img/tours-img/baroq.jpg');
 }
 
+.tours__cards--wrapper .tours__cards .card .card__side .card__picture--5 {
+    background-image: url('img/tours-img/stone.jpg');
+}
+
+.tours__cards--wrapper .tours__cards .card .card__side .card__picture--5 {
+    background-image: url('img/tours-img/stone.jpg');
+}
+
 .card__details {
     text-align: center;
     margin-top: 20px;
@@ -738,7 +746,7 @@ main.move-left {
 }
 
 .country {
-    max-width: 300px;
+    max-width: 250px;
 } 
 
 .country h3 {
@@ -746,6 +754,7 @@ main.move-left {
 }
 
 .country .info-side {
+    font-size: 14px;
     columns: 2;
 }
 
