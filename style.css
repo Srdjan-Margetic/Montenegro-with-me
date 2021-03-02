@@ -517,7 +517,7 @@ main.move-left {
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--2 {
-    background-image: url('img/tours-img/north.jpg');
+    background-image: url('img/tours-img/baroq.jpg');
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--3 {
@@ -525,7 +525,7 @@ main.move-left {
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--4 {
-    background-image: url('img/tours-img/baroq.jpg');
+    background-image: url('img/tours-img/north.jpg');
 }
 
 .tours__cards--wrapper .tours__cards .card .card__side .card__picture--5 {
@@ -697,7 +697,7 @@ main.move-left {
     height: auto;
     width: 100%;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     transition: all .5s ease;
 }
 
@@ -718,6 +718,9 @@ main.move-left {
     display: flex;
     justify-content: space-between;
     padding: 5% 5%;
+    position: relative;
+    z-index: 11;
+
 }
 
 .footer__content h4 {
@@ -743,6 +746,13 @@ main.move-left {
 
 .footer__content .footer__content--left a {
     display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 4444999999999;
+}
+
+.footer__content .footer__content--left a:hover {
+    text-decoration: underline;
 }
 
 .country {
