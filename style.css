@@ -532,8 +532,8 @@ main.move-left {
     background-image: url('img/tours-img/stone.jpg');
 }
 
-.tours__cards--wrapper .tours__cards .card .card__side .card__picture--5 {
-    background-image: url('img/tours-img/stone.jpg');
+.tours__cards--wrapper .tours__cards .card .card__side .card__picture--6 {
+    background-image: url('img/tours-img/donkey.jpg');
 }
 
 .card__details {
@@ -720,7 +720,8 @@ main.move-left {
     padding: 5% 5%;
     position: relative;
     z-index: 11;
-
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer__content h4 {
@@ -733,7 +734,7 @@ main.move-left {
     color: var(--white);
 }
 
-.footer__content .footer__content--right span{
+.footer__content .footer__content--left span{
     display: inline-block;
     margin-right: 5px;
 }
@@ -744,19 +745,31 @@ main.move-left {
     color: var(--white);
 }
 
-.footer__content .footer__content--left a {
+.footer__content .footer__content--right a {
     display: block;
     cursor: pointer;
     position: relative;
     z-index: 4444999999999;
 }
 
-.footer__content .footer__content--left a:hover {
+.footer__content .footer__content--right a:hover {
     text-decoration: underline;
 }
 
+.footer__content .footer__content--quote {
+    color: var(--white);
+}
+
+.footer__content .footer__content--quote .img--wrapper {
+    text-align: center;
+}
+
+.footer__content .footer__content--quote .img--wrapper img {
+    width: 50px;
+}
+
 .country {
-    max-width: 250px;
+    max-width: 120px;
 } 
 
 .country h3 {
@@ -765,7 +778,6 @@ main.move-left {
 
 .country .info-side {
     font-size: 14px;
-    columns: 2;
 }
 
 .country__img {
