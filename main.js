@@ -4,7 +4,7 @@ const video = document.querySelector('.header__video');
 const textBox = document.querySelector('.header__text-box');
 const main = document.querySelector('main');
 const footer = document.querySelector('.footer');
-const footerLeft = document.querySelector('.footer__content--left');
+const footerRight = document.querySelector('.footer__content--right');
 
 toggle.addEventListener('click', function() {
     toggle.classList.toggle('close');
@@ -28,11 +28,11 @@ const renderCountry = function(data, className = '' ) {
         </div>
     </div>
 </article> `
-    footerLeft.insertAdjacentHTML('beforeend', html);
+    footerRight.insertAdjacentHTML('beforeend', html);
 }
 
 const renderError = function(msg) {
-    footerLeft.insertAdjacentText('beforeend', msg);
+    footerRight.insertAdjacentText('beforeend', msg);
 }
 
 const getCountryData = function(country) {
