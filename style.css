@@ -777,16 +777,12 @@ main.move-left {
 }
 
 .footer__content .footer__content--quote .img--wrapper img {
-    width: 80px;
+    width: 60px;
 }
 
-.footer__content .footer__content--left h3 {
-  
-}
-
-.footer__content .footer__content--quote p{
-    font-size: 36px;
-    margin-top: 20px;
+.footer__content .footer__content--quote p {
+    font-size: 32px;
+    margin-top: 30px;
     font-family: 'Italianno', cursive;
     word-break: break-all;
     line-height: 1.1;
@@ -989,7 +985,19 @@ main.move-left {
     .popup .popup__content .popup-right .popup-right--button {
         margin-top: 40px;
     }
-}
+/* Section Footer */
+
+    .footer__content .footer__content--left a {
+        font-size: 14px;
+    }
+
+    .footer__content .footer__content--quote p {
+        font-size: 30px;
+    }
+
+    .country .info-side {
+        font-size: 14px;
+    }
 
 @media (max-width: 860px) {
 
