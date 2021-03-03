@@ -699,6 +699,8 @@ main.move-left {
     position: relative;
     z-index: 0;
     transition: all .5s ease;
+    padding: 5% 10%;
+
 }
 
 .footer.move-left {
@@ -712,12 +714,13 @@ main.move-left {
     background-color: var(--black);
     opacity: .8;
     z-index: -1;
+    top: 0;
+    left: 0;
 } 
 
 .footer__content{
     display: flex;
     justify-content: space-between;
-    padding: 5% 5%;
     position: relative;
     z-index: 11;
     max-width: 1440px;
@@ -734,7 +737,11 @@ main.move-left {
     color: var(--white);
 }
 
-.footer__content .footer__content--left span{
+.footer__content .footer__content--left img {
+   width: 80px;
+}
+
+.footer__content .footer__content--right span{
     display: inline-block;
     margin-right: 5px;
 }
@@ -745,19 +752,24 @@ main.move-left {
     color: var(--white);
 }
 
-.footer__content .footer__content--right a {
+.footer__content .footer__content--left a {
     display: block;
     cursor: pointer;
-    position: relative;
-    z-index: 4444999999999;
+    font-size: 16px;
 }
 
-.footer__content .footer__content--right a:hover {
+.footer__content .footer__content--left a:hover {
     text-decoration: underline;
 }
 
 .footer__content .footer__content--quote {
     color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    text-align: center;
 }
 
 .footer__content .footer__content--quote .img--wrapper {
@@ -765,11 +777,28 @@ main.move-left {
 }
 
 .footer__content .footer__content--quote .img--wrapper img {
-    width: 50px;
+    width: 80px;
 }
 
-.country {
-    max-width: 120px;
+.footer__content .footer__content--left h3 {
+  
+}
+
+.footer__content .footer__content--quote p{
+    font-size: 36px;
+    margin-top: 20px;
+    font-family: 'Italianno', cursive;
+    word-break: break-all;
+    line-height: 1.1;
+    padding: 0 10px;
+}
+
+.footer__content .footer__content--quote p q{
+    line-height: 1.1;
+}
+
+.country  img {
+    width: 120px;
 } 
 
 .country h3 {
@@ -777,7 +806,7 @@ main.move-left {
 }
 
 .country .info-side {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .country__img {
@@ -786,6 +815,9 @@ main.move-left {
 
 
 .footer .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 40px;
     display: flex;
