@@ -1038,6 +1038,30 @@ main.move-left {
         height: auto;
         overflow: visible;
     }
+
+/*** Section Footer ***/
+
+    .footer .footer__content {
+        height: 25vh;
+    }
+
+    .footer .footer__content .footer__content--left a {
+        font-size: 16px;
+    }
+
+    .footer .footer__content .footer__content--right .info-side {
+        font-size: 16px;
+    }
+
+    .footer .footer__content .footer__content--quote {
+        top: auto;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer .footer__content .footer__content--quote p{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 768px) {
