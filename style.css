@@ -994,6 +994,7 @@ main.move-left {
     .country .info-side {
         font-size: 14px;
     }
+}
 
 @media (max-width: 860px) {
 
@@ -1041,10 +1042,7 @@ main.move-left {
         height: 25vh;
     }
 
-    .footer .footer__content .footer__content--left a {
-        font-size: 16px;
-    }
-
+    .footer .footer__content .footer__content--left a,
     .footer .footer__content .footer__content--right .info-side {
         font-size: 16px;
     }
@@ -1221,8 +1219,7 @@ main.move-left {
 
     .footer .footer__content {
         height: inherit;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
 
     .footer .footer__content .footer__content--quote {
@@ -1235,7 +1232,6 @@ main.move-left {
         font-size: 29px; 
         word-break: normal;
     }
-
 
     .footer .footer__content .footer__content--left,
     .footer .footer__content .footer__content--right {
