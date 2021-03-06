@@ -5,6 +5,7 @@ const textBox = document.querySelector('.header__text-box');
 const main = document.querySelector('main');
 const footer = document.querySelector('.footer');
 const footerRight = document.querySelector('.footer__content--right');
+const navLink = document.querySelectorAll('.menu a');
 
 toggle.addEventListener('click', function() {
     toggle.classList.toggle('close');
@@ -14,6 +15,17 @@ toggle.addEventListener('click', function() {
     main.classList.toggle('move-left');
     footer.classList.toggle('move-left');
 });
+
+    for (let i = 0; i < navLink.length; i++) {
+        navLink[i].addEventListener("click", function() {
+          menu.classList.remove("move-left");
+          video.classList.remove('move-left');
+          textBox.classList.remove('move-left');
+          main.classList.remove('move-left');
+          footer.classList.remove('move-left');
+          toggle.classList.remove('close');
+        });
+    }
 
 const renderCountry = function(data, className = '' ) {
     const html = `
