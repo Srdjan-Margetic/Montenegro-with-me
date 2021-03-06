@@ -797,10 +797,6 @@ main.move-left {
     width: 120px;
 } 
 
-.country h3 {
-   text-align: center ;
-}
-
 .country .info-side {
     font-size: 16px;
 }
@@ -1056,7 +1052,7 @@ main.move-left {
     .footer .footer__content .footer__content--quote {
         top: auto;
         bottom: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .footer .footer__content .footer__content--quote p{
@@ -1112,6 +1108,12 @@ main.move-left {
 
     .facts div p {
         font-size: 14px;
+    }
+
+/*** Section Footer ***/
+
+    .footer .footer__content {
+        height: 38vh;
     }
 }
 
@@ -1214,6 +1216,33 @@ main.move-left {
     .popup .popup__content .popup-right .popup-right--button {
         margin-top: 20px;
     }
+
+/*** Section Footer ***/
+
+    .footer .footer__content {
+        height: inherit;
+        flex-direction: column;
+        
+    }
+
+    .footer .footer__content .footer__content--quote {
+        position: static;
+        margin-bottom: 30px;
+        transform: translate(0px, 0px);
+    }
+
+    .footer .footer__content .footer__content--quote p {
+        font-size: 29px; 
+        word-break: normal;
+    }
+
+
+    .footer .footer__content .footer__content--left,
+    .footer .footer__content .footer__content--right {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 560px) {
@@ -1257,10 +1286,6 @@ main.move-left {
         padding: 10px 5%;
     }
 
-    /* .facts div:nth-of-type(2) {
-        display: none;
-    } */
-
     .facts div {
         padding: 20px 20px;
         width: 100%;
@@ -1295,9 +1320,17 @@ main.move-left {
         top: 0;
         right: 15px;
     }
+
+/*** Section Footer ***/
+
+    .footer .footer__content .footer__content--quote p {
+        font-size: 28px; 
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 460px) {
+
 /*** Section Landing page ***/
     .heading-primary {
         margin-bottom: 20px;
@@ -1420,6 +1453,16 @@ main.move-left {
 
     .popup .popup__content .popup-right h2 {
         font-size: 18px;
+    }
+    /*** Section Footer ***/
+
+    .footer .footer__content .footer__content--left a,
+    .footer .footer__content .footer__content--right .info-side {
+        font-size: 14px;
+    }
+
+    .footer .footer__content .footer__content--quote p{
+        font-size: 26px;
     }
 }
 
