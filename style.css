@@ -71,6 +71,7 @@ body {
 
 .menu.move-left {
     right: 0px;
+    transition: all .5s ease;
 }
 
 .menu ul {
