@@ -453,8 +453,9 @@ main.move-left {
 }
 
 .tours__cards--wrapper .tours__cards .card {
-    perspective: 1500px;
     -moz-perspective: 1500px;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
     position: relative;
     height: 500px;
     width: 30%;
@@ -479,6 +480,7 @@ main.move-left {
 
 .tours__cards--wrapper .tours__cards .card .card__side--back {
     background: linear-gradient(to right bottom, var(--blue__light), var(--blue__medium), var(--blue__dark));
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
  
@@ -494,15 +496,18 @@ main.move-left {
 .tours__cards--wrapper .tours__cards .card .card__side--back .btn {
     margin: 20px auto 0 auto;
     left: 25%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     bottom: -5%;
 }
 
 .tours__cards--wrapper .tours__cards .card:hover .card__side--front {
+    -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 
 .tours__cards--wrapper .tours__cards .card:hover .card__side--back {
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
@@ -543,7 +548,6 @@ main.move-left {
 }
 
 .card__side .card__heading {
-    /* background: rgba(255, 255, 255, 0.5); */
     background: rgba(0,0,0, 0.3);
     position: absolute;
     top: 159px;
