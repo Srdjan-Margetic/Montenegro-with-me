@@ -1,0 +1,283 @@
+.footer {
+    background: url('../../img/montenegro-1.jpg') no-repeat center /cover;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    transition: all .5s ease;
+    padding: 5% 10%;
+
+    &.move-left {
+        margin-left: -300px;
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $black;
+        opacity: .8;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    } 
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $black;
+        color: $underline__gray;
+        font-size: 12px;
+    }
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 11;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      &--left,
+      &--right {
+        color: $white;
+    }
+
+    &--left {
+
+        img {
+            width: 80px;
+         }
+
+         a {
+            text-decoration: none;
+            color: $white;
+            display: block;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+         }
+    }
+
+    &--right {
+
+        span{
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    &--quote {
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 100%;
+        text-align: center;
+
+        .img--wrapper {
+            text-align: center;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        p {
+            font-size: 32px;
+            margin-top: 30px;
+            font-family: 'Italianno', cursive;
+            word-break: break-all;
+            line-height: 1.1;
+            padding: 0 10px;
+
+            q{
+                line-height: 1.1;
+            }
+        }
+    }
+}
+
+.country  {
+
+    img {
+        width: 120px;
+    } 
+
+    .info-side {
+        font-size: 16px;
+    }
+}
+
+.country__img {
+    width: 100%;
+}
+
+/****** MEDIA QUERIES *****/
+@media (max-width: 1024px) {
+
+    .footer__content {
+
+        &--left {
+
+            a {
+                font-size: 14px;
+            }
+        }
+
+        &--quote {
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .country {
+
+        .info-side {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+
+    .footer {
+        
+        &__content {
+            height: 25vh;
+
+            &--left {
+                
+                a {
+                    font-size: 16px;
+                }
+            }
+
+            &--right {
+
+                .info-side {
+                    font-size: 16px;
+                }
+            }
+
+            &--quote {
+                top: auto;
+                bottom: 0;
+                margin-bottom: 30px;
+
+                p {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        &__content {
+            height: 38vh;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    .footer {
+        
+        &__content {
+            height: inherit;
+            flex-direction: column;   
+
+            &--quote {
+                position: static;
+                margin-bottom: 30px;
+                transform: translate(0px, 0px);
+
+                p {
+                    font-size: 29px; 
+                    word-break: normal;
+                }
+            }
+
+            &--left,
+            &--right {
+                margin: 0 auto;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+
+    .footer {
+        
+        &__content {
+            
+            &--quote {
+
+                p {
+                    font-size: 28px; 
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+
+    .footer {
+        
+        &__content {
+
+            &--left {
+                
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            &--right {
+
+                .info-side {
+                    font-size: 14px;
+                }
+            }
+
+            &--quote {
+
+                p {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}

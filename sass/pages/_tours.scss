@@ -1,0 +1,222 @@
+.tours__cards--wrapper {
+    max-width: 1440px;
+    margin: 100px auto;
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .tours__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 5%;
+
+        .card {
+            -moz-perspective: 1500px;
+            -webkit-perspective: 1500px;
+            perspective: 1500px;
+            position: relative;
+            height: 500px;
+            width: 30%;
+            margin-bottom: 30px;
+
+            .card__side {
+                -webkit-transition: all .6s ease;;
+                transition: all .6s ease;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 500px;
+                width: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border-radius: 3px;
+                overflow: hidden;
+                box-shadow: 0 15px 40px rgba(0,0,0, 0.2);
+
+                .card__picture{
+                    height: 210px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                 .card__picture--1 {
+                    background-image: url('../../img/tours-img/old-town.jpg');
+                }
+                
+                 .card__picture--2 {
+                    background-image: url('../../img/tours-img/baroq.jpg');
+                }
+                
+                 .card__picture--3 {
+                    background-image: url('../../img/tours-img/lake.jpg');
+                }
+                
+                 .card__picture--4 {
+                    background-image: url('../../img/tours-img/north.jpg');
+                }
+                
+                 .card__picture--5 {
+                    background-image: url('../../img/tours-img/stone.jpg');
+                }
+                
+                 .card__picture--6 {
+                    background-image: url('../../img/tours-img/donkey.jpg');
+                }
+
+                .card__heading {
+                    background: rgba(0,0,0, 0.3);
+                    position: absolute;
+                    top: 159px;
+                    right: 0;
+                    padding: 10px;
+                
+                    p {
+                        margin-top: 10px;
+                     }
+
+                     h4 {
+                        z-index: 2;
+                        position: relative;
+                        color: $white;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .card__side--front {
+                background-color: $white;
+            }
+
+            .card__side--back {
+                background: linear-gradient(to right bottom, $blue__light, $blue__medium, $blue__dark);
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+
+                p {
+                    color: $white;
+                    font-size: 14px;
+                    width: 80%;
+                    height: 300px;
+                    margin:  0 auto;
+                    margin-top: 20%;
+                }
+
+                .btn {
+                    margin: 20px auto 0 auto;
+                    left: 27%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    bottom: -5%;
+                }
+            } 
+            &:hover .card__side--front {
+                -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+            }
+
+            &:hover .card__side--back {
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+        }
+    }
+
+    .pricing {
+        text-align: center;
+        margin-top: 60px;
+    }
+} 
+
+.card__details {
+    text-align: center;
+    margin-top: 20px;
+
+    ul{
+        margin: 0 auto;
+        width: 80%;
+        list-style: none;
+    
+        li {
+            padding: 10px;
+            
+            &:not(:last-child){
+                border-bottom: 1px solid $underline__gray;
+            }
+            
+        }
+    }
+}
+
+/****** MEDIA QUERIES *****/
+@media (max-width: 1200px) {
+
+    .tours__cards--wrapper {
+
+        .tours__cards {
+            justify-content: space-between;
+        }
+
+        .tours__cards .card {
+            height: 500px;
+        }
+    }   
+}
+
+@media (max-width: 1024px) {
+
+    .tours__cards--wrapper {
+
+        .tours__cards {
+            justify-content: space-around;
+
+            .card {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+
+    .tours__cards--wrapper {
+
+        .tours__cards {
+
+            .card {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+
+    .tours__cards--wrapper {
+
+        .tours__cards {
+
+            .card {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+
+    .tours__cards--wrapper {
+
+        .tours__cards {
+
+            .card {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.facts__wrapper {
+    background: url('../../img/montenegro.png') no-repeat center/cover;
+    height: auto;
+    padding: 5% 0;
+}
+
+.facts {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $text__gray;
+    opacity: .9;
+    height: 100%;
+
+    div {
+        background-color: $white;
+        opacity: 0.8;
+        padding: 45px 25px;
+        width: 27%;
+        height: 40%;
+        border-radius: 5px;
+        box-shadow: 0 15px 40px rgba(0,0,0, 0.2);
+        
+        .facts-logo  {
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: center;
+
+            img {
+                max-width: 60px;
+                max-height: 60px;
+            } 
+            
+         } 
+
+         h3 {
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            margin-top: auto;
+        }
+    }
+}
+
+/****** MEDIA QUERIES *****/
+@media (min-width: 2100px) {
+    .facts {
+
+        div {
+            height: 40%;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .facts {
+
+        div {
+            height: 50%;
+        }
+    }
+}
+   
+@media (max-width: 1400px) {
+
+  .facts {
+
+        div {
+            height: 30%;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .facts {
+
+        div {
+            width: 30%;
+            height: 55%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .facts {
+        flex-wrap: wrap;
+        align-content: center;
+
+        div {
+            width: 65%;
+            height: 25%;
+            padding: 35px 25px;
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+
+    .facts div {
+        padding: 25px 25px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .facts {
+
+        div {
+            width: 75%;
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .facts-logo img {
+            max-width: 45px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    .facts {
+
+        div {
+            padding: 20px 20px;
+            width: 90%;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+
+    .facts {
+        padding: 10px 5%;
+
+        div {
+            padding: 20px 20px;
+            width: 100%;
+            height: 35%;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+
+    .facts {
+
+        div  {
+            padding: 15px 15px;
+            height: 40%;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+             }
+        }
+
+        .facts-logo {
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    .facts {
+
+        div  {
+            padding: 10px 0;
+
+            p {
+                font-size: 12px;
+                padding:  0 10px;
+            }
+        }
+    }
+}
